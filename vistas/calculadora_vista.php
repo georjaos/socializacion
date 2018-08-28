@@ -16,7 +16,7 @@
 		<table class="table" >
 		<tr>
 			<td>
-				<h1>Calculadora</h1>
+				<h1 class="font-weight-bold">Calculadora</h1>
 			</td>
 			
 		</tr>
@@ -44,12 +44,12 @@
 			</tr>
 			<tr>
 				
-				<td><input type="text" name="txtResultado" disabled="disabled"
+				<td><input type="text" class="btn-primary" name="txtResultado" disabled="disabled"
 					value="<?php if (isset($calculadora)){ echo $calculadora->calcularResultado(); } else echo "0" ?>">
 				</td>
 			</tr>
 						<tr>
-				<td><input type="submit" class="btn btn-success" name="btnLimpiar" value="Limpiar" /></td>
+				<td><input type="submit" class="btn btn-warning"" name="btnLimpiar" value="Limpiar" /></td>
 				
 			</tr>
 			<tr>
@@ -77,8 +77,8 @@
 			
 
 			<tr>
-				<td><input type="submit" class="btn btn-primary" name="btnRestar" value="Restar" />
-				<input type="submit" class="btn btn-secondary" name="btnSumar" value="Sumar" />
+				<td><input type="submit" class="btn btn-dark"" name="btnRestar" value="Restar" />
+				<input type="submit" class="btn btn-dark"lass="btn btn-secondary " name="btnSumar" value="Sumar" />
 				</td>
 
 			</tr>
