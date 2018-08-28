@@ -1,25 +1,42 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Calculadora</title>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+	<meta name="viewport" content="width=devide-widht,user-scalable=no,initial-scale=1.0,maximun-scale=1.0;minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 </head>
 <body>
-	<h1>Calculadora</h1>
+	
 
 	<form action="FrontController.php?accion=calculadora" method="post">
-		<table border="0">
 
+		
+		<table class="table" >
+		<tr>
+			<td>
+				<h1>Calculadora</h1>
+			</td>
+			
+		</tr>
+		
 			<tr>
-				
-				<h2>
+				<td>
+					<h4 class="text-danger">
 					<?php if (isset($calculadora)){ echo $calculadora->getVacio(); } else echo " " ?>
-				</h2>
+				</h4>
+				</td>
+				
 			</tr>
 
 			<tr>
-				
-				<h2>
+				<td>
+					<h4 class="text-danger">
 					<?php if (isset($calculadora)){ echo $calculadora->getEntero(); } else echo " " ?>
-				</h2>
+				</h4>
+				</td>
+				
 			</tr>
 			<tr>
 				<td>Resultado:</td>
@@ -32,7 +49,7 @@
 				</td>
 			</tr>
 						<tr>
-				<td><input type="submit" name="btnLimpiar" value="Limpiar" /></td>
+				<td><input type="submit" class="btn btn-success" name="btnLimpiar" value="Limpiar" /></td>
 				
 			</tr>
 			<tr>
@@ -60,8 +77,8 @@
 			
 
 			<tr>
-				<td><input type="submit" name="btnRestar" value="Restar" /></td>
-				<td><input type="submit" name="btnSumar" value="Sumar" />
+				<td><input type="submit" class="btn btn-primary" name="btnRestar" value="Restar" />
+				<input type="submit" class="btn btn-secondary" name="btnSumar" value="Sumar" />
 				</td>
 
 			</tr>
